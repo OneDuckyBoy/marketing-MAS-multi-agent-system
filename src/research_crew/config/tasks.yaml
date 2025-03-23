@@ -32,10 +32,32 @@ trend_analysis_report_task:
   required_tools:
     - FileReadTool
     - TextProcessingTool
-# trend_analys_task:
-#   description: >
-#     Conduct a thorough research about trends in social media now
-#     Make sure you find any important information about how to make viral posts on Facebook, Instagram, X.com, Threads and email newsletters
-#     the more information the better
-#   expected_output: >
-#     A list of points about the different platforms with 10 bullet points of the most relevant information about the trends on the given platform
+
+# instagram agent tools
+
+instagram_supervise_task:
+  description: >
+    Coordinate the process of creating an Instagram post. Review research data, guide the writer and editor,
+    and ensure the final post is suitable for publication.
+  expected_output: >
+    An organized post-creation process with a high-quality, approved Instagram post and an image prompt for DALL-E 3.
+
+instagram_write_post_task:
+  description: >
+    Draft an engaging Instagram post based on the provided research and trend data.
+  expected_output: >
+    A well-written Instagram post draft that aligns with the marketing strategy.
+
+instagram_edit_post_task:
+  description: >
+    Review the post draft for errors, brand consistency, and platform suitability.
+    Provide feedback or approve for the final stage.
+  expected_output: >
+    An edited and approved Instagram post ready for finalization.
+
+instagram_generate_image_prompt_task:
+  description: >
+    Create a detailed prompt for DALL-E 3 to generate an Instagram-worthy image.
+    Align the image prompt with the finalized post content.
+  expected_output: >
+    A prompt that generates a visually appealing, context-appropriate image (1024x1024) for Instagram.
