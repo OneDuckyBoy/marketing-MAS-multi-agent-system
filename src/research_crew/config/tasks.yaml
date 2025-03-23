@@ -6,6 +6,7 @@ research_task:
   expected_output: >
     A list with 10 bullet points of the most relevant information about {topic}
 
+
 reporting_task:
   description: >
     Review the context you got and expand each topic into a full section for a report.
@@ -13,6 +14,8 @@ reporting_task:
   expected_output: >
     A fully fledge reports with the mains topics, each with a full section of information.
     Formated as markdown with out '```'
+
+
 trend_analys_task:
   description: >
     Conduct a thorough research about trends in social media now
