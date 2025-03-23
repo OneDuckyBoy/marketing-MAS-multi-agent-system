@@ -15,7 +15,7 @@ class ResearchCrewCrew():
 
     @agent
     def researcher(self) -> Agent:
-        # Define the tools you need
+        # Define the tools you need : )
         file_read_tool = FileReadTool(file_path='./Data/marketing information.txt')
         semantic_search_tool = TXTSearchTool(txt='./Data/marketing information.txt')
 
